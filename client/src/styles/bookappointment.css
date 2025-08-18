@@ -1,0 +1,70 @@
+@import url(app.css);
+
+.modal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 99vh;
+  /* background-color: rgba(0, 0, 0, 0.322); */
+  z-index: 1;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 30%;
+  padding: 2rem;
+  border: 1px solid var(--light-blue);
+  border-radius: 10px;
+  color: var(--light-blue);
+  background-color: rgb(30, 55, 90);
+  position: relative;
+}
+
+.modal__content h2 {
+  color: var(--light-blue);
+}
+
+.modal__content .btn {
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.book {
+  width: 80%;
+}
+.modal {
+  position: fixed; /* Fix to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

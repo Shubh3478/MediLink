@@ -4,9 +4,10 @@
   "description": "Doctor appointment website",
   "main": "server.js",
   "scripts": {
+    "build" : "npm install",
     "start": "node server.js"
   },
-  "author": "Avinash905",
+  "author": "Ashoutosh",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",

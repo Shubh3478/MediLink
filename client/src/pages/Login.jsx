@@ -70,10 +70,7 @@ function Login() {
     <section className="register-section flex-center">
       <div className="register-container flex-center">
         <h2 className="form-heading">Sign In</h2>
-        <form
-          onSubmit={formSubmit}
-          className="register-form"
-        >
+        <form onSubmit={formSubmit} className="register-form">
           <input
             type="email"
             name="email"
@@ -82,6 +79,12 @@ function Login() {
             value={formDetails.email}
             onChange={inputChange}
           />
+          <p>
+            <NavLink className="forget-link" to={"/forget-password"}>
+              Forgot Password?
+            </NavLink>
+          </p>
+
           <input
             type="password"
             name="password"
@@ -90,19 +93,13 @@ function Login() {
             value={formDetails.password}
             onChange={inputChange}
           />
-          <button
-            type="submit"
-            className="btn form-btn"
-          >
+          <button type="submit" className="btn form-btn">
             sign in
           </button>
         </form>
         <p>
           Not a user?{" "}
-          <NavLink
-            className="login-link"
-            to={"/register"}
-          >
+          <NavLink className="login-link" to={"/register"}>
             Register
           </NavLink>
         </p>
